@@ -20,7 +20,7 @@ module.exports = function(grunt){
         copy: {
             src: {
                 files: [
-                    {expand: true, cwd: "src/", src: ["**","!**/*.less","!**/*.scss"], dest: "build/"},
+                    {expand: true, cwd: "src", src: ["**","!**/*.less","!**/*.scss"], dest: "build/"},
                 ]
             }
         },
@@ -66,7 +66,7 @@ module.exports = function(grunt){
             app: {
               files: [{
                   expand: true,
-                  cwd: "src/app",
+                  cwd: "./src/app/",
                   src: "**/*.js",
                   dest: "build/app"
               }]
@@ -138,6 +138,7 @@ module.exports = function(grunt){
             js: {
 
                 src: "src/app/**/*.js",
+                exclude: ["src/app/app.js", "src/app/config.js"],
                 options: {
                     breakOnErrors: false,
                     errorsOnly: false,
