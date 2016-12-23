@@ -2,6 +2,10 @@
 /*
     Build Tasks
     Copyright: Adrian David Smith 2016
+
+    install:
+
+    brew install chrome-cli
 */
 /* -------------------------------------------------------------------- */
 
@@ -42,7 +46,6 @@ module.exports = function(grunt){
 
         print("Engine", "Executing Pluto Engine");
 
-        grunt.task.run("notify:engine");
         grunt.task.run("watch");
 
     });
