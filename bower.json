@@ -1,0 +1,21 @@
+{
+  "name": "pluto",
+  "directory": "src/app/components/",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "Adrian David Smith <sierra.as74@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^2.2.3"
+  }
+}
