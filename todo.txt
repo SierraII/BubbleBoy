@@ -1,0 +1,4 @@
+TODO
+
+pinned post parents
+start thinking about blocking elements structures
