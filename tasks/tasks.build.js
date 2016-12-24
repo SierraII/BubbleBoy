@@ -49,6 +49,7 @@ module.exports = function(grunt){
     grunt.registerTask("engine", function(){
 
         grunt.task.run("build:false");
+        grunt.task.run("reload_extensions");
         grunt.task.run("watch");
 
     });
