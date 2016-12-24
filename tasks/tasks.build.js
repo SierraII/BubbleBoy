@@ -106,7 +106,7 @@ module.exports = function(grunt){
     grunt.registerTask("copy_src", function(){
 
         grunt.log.writeln(chalk.magenta.bold("Executing Copying Process."));
-        grunt.task.run("newer:copy:src");
+        grunt.task.run("sync");
 
     });
 

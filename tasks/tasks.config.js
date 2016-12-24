@@ -17,18 +17,25 @@ module.exports = function(grunt){
         pkg: grunt.file.readJSON("package.json"),
 
         // copy files
-        copy: {
-            src: {
+        sync: {
+            main: {
                 files: [
-                    {expand: true, cwd: "src", src: ["**","!**/*.less","!**/*.scss"], dest: "build/"},
-                ]
+                    {cwd: "src/", src: ["**/*.*"], dest: "build/"}
+                ],
+                verbose: true,
+                pretend: false,
+                failOnError: true,
+                ignoreInDest: "**/*.scss",
+                updateAndDelete: true,
+                compareUsing: "md5"
+
             }
         },
 
         // delete files and folders
         clean: {
             build: ["build"],
-            cache: ["cache"]
+            cache: ["config/cache"]
         },
 
         // interactive prompt
@@ -127,7 +134,7 @@ module.exports = function(grunt){
 
                 },
 
-                cache: "cache/"
+                cache: "config/cache/"
 
             }
         },
