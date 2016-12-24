@@ -169,7 +169,7 @@ module.exports = function(grunt){
         // watch for engine
         watch: {
             scripts: {
-                files: ["src/**/*.*"],
+                files: ["src/**/*.*", "bower.json"],
                 tasks: ["javascript_lint", "css_lint", "html_lint", "copy_src", "scss_compile", "javascript_minify", "css_minify", "image_min", "analysis", "reload_extensions"],
                 options: {
                     spawn: false,
