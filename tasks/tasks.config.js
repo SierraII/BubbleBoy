@@ -25,9 +25,8 @@ module.exports = function(grunt){
                 verbose: true,
                 pretend: false,
                 failOnError: true,
-                ignoreInDest: "**/*.scss",
-                updateAndDelete: true,
-                compareUsing: "md5"
+                ignoreInDest: "**/*.css",
+                updateAndDelete: true
 
             }
         },
