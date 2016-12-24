@@ -9,7 +9,8 @@ var config = {
         "Kardashian",
         "Honey-G",
         "Kanye West",
-        "X-Factor"
+        "X-Factor",
+        "guitar"
     ],
     "collections" : [
 
@@ -20,7 +21,7 @@ var config = {
             "trigger" : "Facebook",
             "url" : "http://www.facebook.com",
             "global_selectors" : ["p", "span"],
-            "global_parents" : ["[data-testid]", "._427x", "._4-u2 _4-u8"],
+            "global_parents" : ["[data-testid]", "._427x", "._4-u2"],
             "custom_selectors" : [
                 {
                     "id" : "._3ekx",
