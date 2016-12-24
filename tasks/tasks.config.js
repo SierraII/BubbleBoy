@@ -170,7 +170,7 @@ module.exports = function(grunt){
         watch: {
             scripts: {
                 files: ["src/**/*.*"],
-                tasks: ["javascript_lint", "css_lint", "html_lint", "copy_src", "scss_compile", "javascript_minify", "css_minify", "image_min", "analysis"],
+                tasks: ["javascript_lint", "css_lint", "html_lint", "copy_src", "scss_compile", "javascript_minify", "css_minify", "image_min", "analysis", "reload_extensions"],
                 options: {
                     spawn: false,
                 },

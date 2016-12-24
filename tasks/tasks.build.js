@@ -14,11 +14,15 @@ var chalk = require("chalk");
 module.exports = function(grunt){
 
     // build task
-    grunt.registerTask("build", function(){
+    grunt.registerTask("build", function(enable_time){
 
-        require("time-grunt")(grunt);
+        if(!enable_time){
 
-        print("Build", "Executing Core Tasks For Pluto.");
+            require("time-grunt")(grunt);
+
+            print("Build", "Executing Core Tasks For Pluto.");
+
+        }
 
         // lint
         grunt.task.run("javascript_lint");
@@ -44,8 +48,7 @@ module.exports = function(grunt){
 
     grunt.registerTask("engine", function(){
 
-        print("Engine", "Executing Pluto Engine");
-
+        grunt.task.run("build:false");
         grunt.task.run("watch");
 
     });
