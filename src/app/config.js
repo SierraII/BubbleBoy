@@ -10,7 +10,9 @@ var config = {
         "Honey-G",
         "Kanye West",
         "X-Factor",
-        "guitar"
+        "guitar",
+        "Status",
+        "RIP"
     ],
     "collections" : [
 
@@ -21,7 +23,7 @@ var config = {
             "trigger" : "Facebook",
             "url" : "http://www.facebook.com",
             "global_selectors" : ["p", "span"],
-            "global_parents" : ["[data-testid]", "._427x", "._4-u2"],
+            "global_parents" : ["[data-testid]", "._427x", "._4-u2", "userContentWrapper", "userContentWrapper _5pcr"],
             "custom_selectors" : [
                 {
                     "id" : "._3ekx",

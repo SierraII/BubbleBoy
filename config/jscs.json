@@ -143,7 +143,7 @@
     "validateIndentation" : 4,
     "validateLineBreaks" : "LF",
     "validateNewlineAfterArrayElements" : {
-        "maximum" : 3
+        "maximum" : 99
     },
     "validateParameterSeparator" : ", ",
     "validateQuoteMarks" : "\""
